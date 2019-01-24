@@ -11,6 +11,8 @@ $(document).ready(function() {
 function initializePage() {
 	$("#testjs").click(function(e) {
 		$('.jumbotron h1').text("You clicked a button");
+		$("testjs").text("Please wait...");
+		$("testjs").addClass("active");
 	});
 	$("a.thumbnail").click(projectClick);
 	// Add any additional listeners here
